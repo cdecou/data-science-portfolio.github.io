@@ -3,10 +3,10 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Christopher DeCou — ML Engineering & GenAI Portfolio</title>
-  <meta name="description" content="Data scientist portfolio: generative AI, real-time NLP, credit ML, and open-source projects on GitHub." />
-  <meta property="og:title" content="Christopher DeCou — ML Engineering & GenAI Portfolio" />
-  <meta property="og:description" content="Ten systems shipped from prototype to production — GenAI, RAG, credit risk, and more." />
+  <title>Christopher DeCou — Data Science & Machine Learning Portfolio</title>
+  <meta name="description" content="Portfolio website with data science, machine learning, generative AI, and other experimental projects by Christopher DeCou." />
+  <meta property="og:title" content="Christopher DeCou — Data Science & Machine Learning Portfolio" />
+  <meta property="og:description" content="Data science and ML projects with links to live demonstrations." />
   <meta property="og:type" content="website" />
   <meta name="twitter:card" content="summary_large_image" />
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,500;12..96,600;12..96,700;12..96,800&family=JetBrains+Mono:wght@400;500&display=swap" />
@@ -16,21 +16,20 @@
   <header class="site-header" id="top">
     <div class="header-inner">
       <a href="#top" class="brand-link">
-        <div class="logo-mark" aria-hidden="true">C</div>
+        <div class="logo-mark" aria-hidden="true">CD</div>
         <div class="brand-stack">
           <div class="brand-name">Christopher DeCou</div>
-          <div class="brand-sub">ML ENGINEERING · GENAI</div>
+          <div class="brand-sub">DATA SCIENCE · ML ENGINEERING</div>
         </div>
       </a>
       <nav class="nav">
         <a href="#top">Home</a>
         <a href="#about">About</a>
         <a href="#projects" class="active">Projects</a>
-        <a href="#huck">Huck</a>
         <span class="divider" aria-hidden="true"></span>
         <a href="https://github.com/cdecou" target="_blank" rel="noreferrer">GitHub ↗</a>
       </nav>
-      <a href="#resume" class="btn-resume">Résumé</a>
+      <a href="./resume/Aug 26 DeCou CV Public.pdf" class="btn-resume">Résumé</a>
     </div>
   </header>
 
@@ -40,27 +39,24 @@
       <div class="grid-bg" aria-hidden="true"></div>
       <div class="hero-inner">
         <div class="eyebrow-mono">PROJECTS</div>
-        <h1>Ten systems, prototype to production</h1>
+        <h1>Building and storytelling with data</h1>
         <p class="lead">
-          Generative AI and real-time NLP augmenting thousands of contact-center agents, credit
-          models decisioning loans at large scale, and the earlier research and big-data work that
-          got me there.
+          From dissertation research to experimental projects, I develop insights from data. 
+          My work has explored social network analysis, spatial autoregression, NLP, and OCR 
+          with recent experiments in RAG pipelines, graph databases, and other LLM-powered workflows.
         </p>
         <div class="filters" role="tablist" aria-label="Project filters">
           <button class="chip chip-active" type="button" data-filter="all">
-            <span>All work</span><span class="count">10</span>
+            <span>Projects</span><span class="count">5</span>
           </button>
           <button class="chip" type="button" data-filter="genai">
             <span>Generative AI</span><span class="count">2</span>
           </button>
           <button class="chip" type="button" data-filter="nlp">
-            <span>Real-Time NLP</span><span class="count">2</span>
+            <span>NLP</span><span class="count">2</span>
           </button>
-          <button class="chip" type="button" data-filter="credit">
-            <span>Credit ML</span><span class="count">2</span>
-          </button>
-          <button class="chip" type="button" data-filter="earlier">
-            <span>Earlier work</span><span class="count">4</span>
+          <button class="chip" type="button" data-filter="ml">
+            <span>ML Engingeering</span><span class="count">1</span>
           </button>
         </div>
       </div>
@@ -71,30 +67,27 @@
       <div class="featured-card">
         <div class="featured-grid">
           <div>
-            <span class="badge-live">▶ LIVE DEMO · YOU CAN TRY THIS ONE</span>
-            <h2>Live Call Copilot</h2>
+            <span class="badge-live">▶ LIVE DEMO · CHECK OUT THE GRADIO APP</span>
+            <h2>RAG Retriever Comparison</h2>
             <p class="desc">
-              A public rebuild of the shape of the systems below, running live in your browser.
-              Talk into your mic — or play a sample call — and watch a two-voice transcript,
-              self-drafting notes, RAG-retrieved procedure docs, and a sub-second frustration
-              alert. Deepgram + OpenAI composed into a real-time product; no proprietary anything.
+              This app demonstrates differences between different forms of retrieval architecture for RAG models. The user uploads a PDF which is stored in vector database. After embedding the file, the app allows the user to experiment with three different configurations for generating answers based on user queries. The app can help clarify which architecture is most useful for a particular set of documents and for specific domain expertise.
             </p>
             <div class="featured-actions">
-              <a class="btn-primary" href="https://agentassistdemo.harrisonjansma.com" target="_blank" rel="noreferrer">Open the live demo</a>
-              <a class="btn-ghost" href="https://github.com/harrisonjansma/live-call-copilot" target="_blank" rel="noreferrer">Read the write-up</a>
+              <a class="btn-primary" href="https://huggingface.co/spaces/cdecou/RAG-PDF-Retriever-Comparison" target="_blank" rel="noreferrer">Open the live demo</a>
+              <a class="btn-ghost" href="https://huggingface.co/spaces/cdecou/RAG-PDF-Retriever-Comparison/blob/main/README.md" target="_blank" rel="noreferrer">Read the write-up</a>
             </div>
           </div>
           <div>
             <div class="demo-window">
               <div class="demo-bar">
                 <div class="demo-dots"><span></span><span></span><span></span></div>
-                <div class="demo-url">agentassistdemo.harrisonjansma.com</div>
+                <div class="demo-url">https://huggingface.co/spaces/cdecou/RAG-PDF-Retriever-Comparison</div>
                 <div></div>
               </div>
               <div class="demo-run">
-                <a href="https://agentassistdemo.harrisonjansma.com" target="_blank" rel="noreferrer">▶ Run it here</a>
+                <a href="https://huggingface.co/spaces/cdecou/RAG-PDF-Retriever-Comparison" target="_blank" rel="noreferrer">▶ Run it here</a>
               </div>
-              <p class="demo-note">opens the real app full-screen</p>
+              <p class="demo-note">opens app in a new window</p>
             </div>
           </div>
         </div>
@@ -103,32 +96,26 @@
 
     <!-- Sections -->
     <section class="section" id="genai" data-section="genai">
-      <h2>Generative AI & Real-Time NLP</h2>
-      <p class="blurb">Live, LLM-powered systems augmenting thousands of contact-center agents at Capital One.</p>
+      <h2>Generative AI</h2>
+      <p class="blurb">Projects centered around using Generative AI and Large Language Models.</p>
       <div class="section-list"></div>
     </section>
 
     <section class="section" id="nlp" data-section="nlp">
-      <h2>Real-Time NLP</h2>
-      <p class="blurb">Streaming speech and language systems that turn live conversation into actionable signals.</p>
+      <h2>Natural Language Processing</h2>
+      <p class="blurb">Research and applications dedicated to question and answering, NER (Named Entity Recognition), and creating structured textual data.</p>
       <div class="section-list"></div>
     </section>
 
-    <section class="section" id="credit" data-section="credit">
-      <h2>Applied ML & Credit Risk</h2>
-      <p class="blurb">Models that decision loans at large scale in auto lending.</p>
-      <div class="section-list"></div>
-    </section>
-
-    <section class="section" id="earlier" data-section="earlier">
-      <h2>Earlier Work</h2>
-      <p class="blurb">Where I sharpened the fundamentals — research, big data, and NLP.</p>
+    <section class="section" id="credit" data-section="ml">
+      <h2>ML Engineering</h2>
+      <p class="blurb">Work focused on feature engineering, model training, and corpus management.</p>
       <div class="section-list"></div>
     </section>
 
     <section class="resume-cta" id="resume">
-      <p>Want the full detail, with dates and stack?</p>
-      <a href="https://github.com/harrisonjansma" target="_blank" rel="noreferrer">View my résumé</a>
+      <p>Want to learn more about my background and experience?</p>
+      <a href="./resume/Aug 26 DeCou CV Public.pdf" target="_blank" rel="noreferrer">View my résumé</a>
     </section>
   </main>
 
@@ -136,12 +123,10 @@
     <div class="footer-inner">
       <div>
         <div class="footer-brand">
-          <div class="logo-mark" aria-hidden="true">C</div>
+          <div class="logo-mark" aria-hidden="true">CD</div>
           <div class="footer-name">Christopher DeCou</div>
         </div>
-        <p class="footer-bio">
-          Machine Learning Engineer & Data Science Manager. Open to conversations about
-          generative AI and applied ML.
+        <p class="footer-bio"> Data Scientist and ML Engineer with expertise in Computational Humanities and Digital History. Open to discuss more about the role of humanistic perspectives in AI and automation.
         </p>
         <a class="footer-email" href="mailto:contact@christopherdecou.com">contact@christopherdecou.com</a>
       </div>
@@ -151,79 +136,53 @@
           <li><a href="#top">Home</a></li>
           <li><a href="#about">About</a></li>
           <li><a href="#projects">Projects</a></li>
-          <li><a href="#huck">Huck</a></li>
           <li><a href="#resume">Résumé</a></li>
         </ul>
       </div>
       <div>
-        <div class="footer-label">ELSEWHERE</div>
+        <div class="footer-label">CONTACT</div>
         <ul class="footer-list">
-          <li><a href="https://linkedin.com/in/harrisonjansma" target="_blank" rel="noreferrer">LinkedIn ↗</a></li>
-          <li><a href="https://github.com/harrisonjansma" target="_blank" rel="noreferrer">GitHub ↗</a></li>
-          <li><a href="https://medium.com/@harrisonjansma" target="_blank" rel="noreferrer">Medium ↗</a></li>
+          <li><a href="https://www.linkedin.com/in/christopher-decou-1b272555/" target="_blank" rel="noreferrer">LinkedIn ↗</a></li>
+          <li><a href="https://github.com/cdecou" target="_blank" rel="noreferrer">GitHub ↗</a></li>
+          <li><a href="https://www.christopherdecou.com/" target="_blank" rel="noreferrer">Academic Website ↗</a></li>
         </ul>
       </div>
     </div>
     <div class="footer-bottom">
       <div class="footer-bottom-inner">
         <div>© 2026 Christopher DeCou</div>
-        <div>Hand-built with HTML, CSS & JavaScript · GitHub Pages</div>
+        <div> Design inspired by <a href="https://harrisonjansma.com/" target="_blank" rel="noreferrer"> Harrison Jansma Portfolio</a> · GitHub Pages</div>
       </div>
     </div>
   </footer>
 
   <script>
     const PROJECTS = [
-      { num: "01", eyebrow: "Generative AI", title: "Real-Time Call Summarization",
-        tags: ["GPT-4","Kafka","Python","AWS Lambda"],
-        desc: 'An agentic GPT reasoning pipeline on Kafka that auto-drafts servicing-agent notes mid-call, with an LLM "agent-as-a-judge" review stage before anything reaches the agent.',
-        meta: [["Real-time","Mid-call notes"],["Agentic","Draft + review"],["In pilot","Governed rollout"]],
-        category: "genai", repo: "https://github.com/harrisonjansma/call-summarization" },
-      { num: "02", eyebrow: "Retrieval · RAG", title: "Live Procedure RAG",
-        tags: ["RAG","pgvector","Embeddings","Python"],
-        desc: "A retrieval-augmented generation system that runs vector-embedding retrieval over live call transcripts to surface the right procedure and training documents to agents in real time.",
-        meta: [["Real-time","Mid-conversation"],["Vector search","Procedure docs"]],
-        category: "genai", repo: "https://github.com/harrisonjansma/live-procedure-rag" },
-      { num: "03", eyebrow: "Real-Time NLP", title: "LLM Complaint Detection",
-        tags: ["LLMs","Prompt Eval","Python"],
-        desc: "An LLM system that detects and categorizes customer complaints on live transcripts and flags escalations — lifting complaint capture sharply over a legacy frustration-phrase flag, at high precision.",
-        meta: [["GenAI","Complaint capture"],["High precision","vs legacy flag"]],
-        category: "nlp", repo: "https://github.com/harrisonjansma/llm-complaint-detection" },
-      { num: "04", eyebrow: "Speech · NLP", title: "Streaming Transcription Pipeline",
-        tags: ["Deepgram","WebSockets","Python"],
-        desc: "A two-voice streaming transcription layer feeding every downstream real-time system — sub-second latency, speaker diarization, and graceful reconnection built in.",
-        meta: [["Streaming","Sub-second"],["Diarization","Two-voice"]],
-        category: "nlp", repo: "https://github.com/harrisonjansma/streaming-transcription" },
-      { num: "05", eyebrow: "Credit ML", title: "Auto-Loan Underwriting ML Suite",
-        tags: ["Python","XGBoost","scikit-learn","Snowflake"],
-        desc: "Engineered and maintained the machine-learning suite behind Capital One's auto-loan underwriting, finding signal in credit characteristics tied to loan performance to decision loans at large scale.",
-        meta: [["Production ML","Credit risk"],["Regulated","High-volume"]],
-        category: "credit", repo: "https://github.com/harrisonjansma/auto-loan-ml" },
-      { num: "06", eyebrow: "Reinforcement Learning", title: "Credit-Policy Simulation Engine",
-        tags: ["Reinforcement Learning","Python","Simulation"],
-        desc: "Built a simulation engine that generates synthetic loan applications to power a reinforcement-learning task that optimizes credit policy — testing decisions before they ever touch a real applicant.",
-        meta: [["RL","Policy optimization"],["Synthetic","Application simulation"]],
-        category: "credit", repo: "https://github.com/harrisonjansma/credit-policy-rl" },
-      { num: "07", eyebrow: "Anomaly Detection · Sprint", title: "Billing-Failure Anomaly Detection",
-        tags: ["Anomaly Detection","Python","Time Series"],
-        desc: "Designed a novel model-training framework for anomaly detection on customer billing data, and built a system that reliably surfaces 5× more detectable failure types than the previous heuristic.",
-        meta: [["5×","Detectable failure types"],["Sprint","6-week ship"]],
-        category: "earlier", repo: "https://github.com/harrisonjansma/billing-anomaly" },
-      { num: "08", eyebrow: "Big Data", title: "Petabyte-Scale ETL Rework",
-        tags: ["Spark","Airflow","Snowflake"],
-        desc: "Rewrote a fragile nightly ETL over petabytes of transaction data into a partitioned Spark job with idempotent restarts, cutting failed reruns to near-zero and unblocking downstream ML training.",
-        meta: [["Scale","Petabytes/night"],["Reliability","Near-zero reruns"]],
-        category: "earlier", repo: "https://github.com/harrisonjansma/petabyte-etl" },
-      { num: "09", eyebrow: "Deep Learning · Research", title: "CNN Ablation Studies",
-        tags: ["PyTorch","CNNs","Research"],
-        desc: "A series of controlled ablation studies isolating which architectural choices in modern CNNs actually move accuracy — published as long-form writing that reached hundreds of thousands of readers.",
-        meta: [["Research","Ablation studies"],["Reach","100k+ readers"]],
-        category: "earlier", repo: "https://github.com/harrisonjansma/cnn-ablations" },
-      { num: "10", eyebrow: "NLP · Writing", title: "Self-Taught Projects & Technical Writing",
-        tags: ["LDA","scikit-learn","KMeans","Medium"],
-        desc: "Taught myself the field in the open — unsupervised LDA topic modelling that isolated toxic Wikipedia comments into their own cluster, KMeans/agglomerative clustering on survey data, and widely-read data-science writing on freeCodeCamp and Towards Data Science.",
-        meta: [["2 articles","freeCodeCamp · TDS"],["LDA · NLP","Topic modelling"]],
-        category: "earlier", repo: "https://github.com/harrisonjansma/self-taught-ds" }
+      { num: "01", eyebrow: "Generative AI", title: "RAG Retriever",
+        tags: ["HuggingFace","Gradio","Python"],
+        desc: 'A web application built with Gradio and LangChain that allows you to chat with your PDF documents.',
+        meta: [["Chat","Natural language"],["RAG","Multimodel Retrievers"],["Demo","Gradio App"]],
+        category: "genai", repo: "https://huggingface.co/spaces/cdecou/RAG-PDF-Retriever-Comparison" },
+      { num: "02", eyebrow: "ML Engineering", title: "Finding the Animal Through Image Classification of Historical Photographs",
+        tags: ["Google Cloud","object detection","Europeana"],
+        desc: "This case study focused on using big data analysis and computer vision to identify traces of animals in historical World War I photographic collections.",
+        meta: [["Research","Seminar Paper"],["Big Data","Google Cloud"]],
+        category: "ml", repo: "https://github.com/cdecou/big-data-animal-experiment" },
+      { num: "03", eyebrow: "NLP", title: "Six Degrees of Zhou Lianggong",
+        tags: ["Social Network Analysis","Correspondence","Python", "NER", "OpenCV"],
+        desc: "This project reconstructs a historical database of scholarly communication to analyze the circulation of poetry, historical preservation efforts, and artisanal knowledge.",
+        meta: [["NLP","Extracted Key Information"],["ORC","Tesseract Customization"]],
+        category: "nlp", repo: "https://github.com/cdecou/six-degrees-of-zhou-lianggong" },
+      { num: "04", eyebrow: "NLP", title: "Web Scraper",
+        tags: ["Selenium","BeautifulSoup","Python"],
+        desc: "This project is an automated web scraping tool designed to extract keyword and subject data for academic articles and bibliographies.",
+        meta: [["Automation","Fast-processing"],["Web Scraping","Data extraction and organization"]],
+        category: "nlp", repo: "https://github.com/cdecou/keyword-concept" },
+      { num: "05", eyebrow: "ML Engineering", title: "Forthcoming",
+        tags: ["TBD","TBD","TBD","TBD"],
+        desc: "TBD",
+        meta: [["TBD","TBD"],["TBD","TBD"]],
+        category: "ml", repo: "TBD" },
     ];
 
     const ghIcon = '<svg aria-hidden="true" viewBox="0 0 24 24" fill="currentColor"><path d="M12 .5C5.65.5.5 5.65.5 12a11.5 11.5 0 0 0 7.86 10.93c.58.1.79-.25.79-.56v-2c-3.2.7-3.88-1.36-3.88-1.36-.52-1.32-1.28-1.67-1.28-1.67-1.05-.72.08-.7.08-.7 1.16.08 1.77 1.19 1.77 1.19 1.03 1.77 2.7 1.26 3.36.96.1-.75.4-1.26.73-1.55-2.55-.29-5.24-1.28-5.24-5.68 0-1.25.45-2.28 1.18-3.08-.12-.29-.51-1.46.11-3.05 0 0 .97-.31 3.18 1.18a11 11 0 0 1 5.79 0c2.2-1.49 3.17-1.18 3.17-1.18.63 1.59.24 2.76.12 3.05.74.8 1.18 1.83 1.18 3.08 0 4.41-2.7 5.38-5.27 5.67.41.35.78 1.05.78 2.11v3.12c0 .31.21.67.8.56A11.5 11.5 0 0 0 23.5 12C23.5 5.65 18.35.5 12 .5Z"/></svg>';
